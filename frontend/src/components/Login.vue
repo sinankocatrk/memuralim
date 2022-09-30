@@ -1,11 +1,16 @@
 <template>
     <div class="container">
-        <h1>Hello vue</h1>
+        <h1>Hello {{ msg }}</h1>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Login"
+        name: "Login",
+        data() {
+            return {
+                msg: "Zort"
+            }
+        }
     }
 </script>
