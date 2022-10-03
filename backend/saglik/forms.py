@@ -4,11 +4,11 @@ from .models import *
 class EbeForm(forms.ModelForm):
     class Meta:
         model = Ebe
-        fields = ('tip', 'kodu', 'sbkodu', 'kurumadı','sehir','sayi')
+        fields = ('kodu', 'sbkodu', 'kurumadı','sehir','sayi')
 
 
-class HemsireForm(forms.ModelForm):
+class Yil2021eForm(forms.ModelForm):
     class Meta:
-        model = Hemsire
-        fields = ('tip', 'kodu', 'sbkodu', 'kurumadı','sehir','sayi')
+        model = Yil2021
+        fields = ('kodu', 'sbkodu', 'kurumadı','pozizyon','sehir','sayi')
 
